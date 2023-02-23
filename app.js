@@ -68,22 +68,72 @@
     
 //   }
 ;
-
+//  FIRST ATTEMPT USING TIPS AND CODE FROM CLASS
         function promptMe(){
         var userPassword = prompt("Please provide a Password");
         alert (userPassword);
         // if block should be here userPassword !== userPassword.length <= 8 
-        var passwordLenght = prompt("Please make password at least 8 characters long");
+var passwordLength = prompt("Please make password at least 8 characters long");
         alert (userPassword);
         var passwordChar = prompt("Please include at least one of the following; lowercase, uppercase, numeric, and/or special characters");
         alert (userPassword);
         // work with the || sign, looking in to using split method
 }
-// if { const userPassword !== function text.passwordLenght }
+
+// if (passwordLength => userPassword.length) {
+//     console.log("Meets Criteria");
+
+// } else if (passwordLength) {
+//     prompt("Please make password at least 8 characters long");
+//   }
+
+
+
+// 2nd ATTEMPT AFTER READING SECTION 17 
+// var userPassword = length(8)
+var passwordLength = length[8]
+var passwordChar = ("@", "&", "$", "*", "#") 
+
+function meetsCriteria(userPassword, passwordLength) {
+    if (x === y) {
+      console.log('Meets Criteria');
+    } else if (x == y) {
+      console.log('ehh');
+    } else {
+      console.log('Please make password at least 8 characters long');
+    }
+    return;
+  }
+
+  function meetsCriteria2(userPassword, passwordChar) {
+    if (x === y) {
+      console.log('Meets Criteria');
+    } else if (x == y) {
+      console.log('ehh');
+    } else {
+      console.log('Please use a special character from the list above');
+    }
+    return;
+  }
+
+
+
+
+
+
+// var passwordCheck = (passwordLength => text.length)
+
+// console.log(passwordCheck)
+
+
+// if { const userPassword !== function text.passwordLength }
+// if { 
+//     console.log(userPassword == function
+// }
 
        
 //         const passwordCrit = function () {
-//             const passwordLenght = prompt('Make password at least 8 characters long').toLowerCase();
+//             const passwordLength = prompt('Make password at least 8 characters long').toLowerCase();
             // if (playerChoice !== 'r' && playerChoice !== 'p' && playerChoice !== 's') {
             //   alert("You must choose a valid option");
             //   return;
