@@ -16,3 +16,10 @@ more practice with html and CSS elements
 ## Struggles
 Using logic to find to set up the if and for-loop statements.
 Making variables that made sense and didnt confuse me
+
+### Links and Screenshots
+Github: https://github.com/escotoj/password_project-
+Deployed App: https://escotoj.github.io/password_project-/
+
+![This is an image](Screenshot3.png)
+
