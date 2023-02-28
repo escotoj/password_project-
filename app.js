@@ -21,7 +21,31 @@ var lowerChar = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m"
 var UpperChar = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
 var numChar = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
 
-var finalPassword = []
+var optionChar = ""
+
+function randomSpecialChar() {
+    // create cope listChar into an array
+    var listChar = ["@", "$", "!", "<", ">", "?", "&", "%", "@"]
+    const char = listChar[Math.floor(Math.random() * listChar.length)]
+    return char
+}
+
+function randomSpecialChar() {
+    // create cope listChar into an array
+    var listChar = ["@", "$", "!", "<", ">", "?", "&", "%", "@"]
+    const char = listChar[Math.floor(Math.random() * listChar.length)]
+    return char
+}
+
+function randomSpecialChar() {
+    // create cope listChar into an array
+    var listChar = ["@", "$", "!", "<", ">", "?", "&", "%", "@"]
+    const char = listChar[Math.floor(Math.random() * listChar.length)]
+    return char
+}
+
+// var finalPassword = []
+
 
 
 function promptMe() {
@@ -39,7 +63,10 @@ function promptMe() {
     var numberChar = confirm("Do you wish to add a number");
     if (specialChar || lowercaseChar || uppercaseChar || numberChar) {
         if (specialChar) { 
-            optionChar = optionChar.concat(listChar)
+            // add fuction for random selection do the same for other 
+            optionChar = randomSpecialChar()
+            // optionChar.concat(listChar)
+            console.log(optionChar)
         }
         if (numberChar) {
             optionChar = optionChar.concat(numChar)
