@@ -67,67 +67,32 @@ var optionLow = "";
 var userSelection = [];
 
 function randomSpecialChar() {
-  // create cope listChar into an array
-  var listChar = ["@", "$", "!", "<", ">", "?", "&", "%", "@"];
-  const char = listChar[Math.floor(Math.random() * listChar.length)];
+  var char = listChar[Math.floor(Math.random() * listChar.length)];
   return char;
 }
 
 function randomLowerChar() {
-  // create cope listChar into an array
-  var lowerChar = [
-    "a",
-    "b",
-    "c",
-    "d",
-    "e",
-    "f",
-    "g",
-    "h",
-    "i",
-    "j",
-    "k",
-    "l",
-    "m",
-    "n",
-    "o",
-    "p",
-    "q",
-    "r",
-    "s",
-    "t",
-    "u",
-    "v",
-    "w",
-    "x",
-    "y",
-    "z",
-  ];
-  const lowChar = lowerChar[Math.floor(Math.random() * lowerChar.length)];
+  var lowChar = lowerChar[Math.floor(Math.random() * lowerChar.length)];
   return lowChar;
 }
 
 function randomUpperChar() {
-    var upperChar = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"]
-    const upChar = upperChar[Math.floor(Math.random() * upChar.length)]
-    return upChar
+  var upChar = upperChar[Math.floor(Math.random() * upperChar.length)];
+  return upChar;
 }
 
 function randomNumChar() {
-    let numChar = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"]
-    const ranNum = numChar[Math.floor(Math.random() * ranNum.length)]
-    return ranNum
+  var ranNum = numChar[Math.floor(Math.random() * numChar.length)];
+  return ranNum;
 }
-
-// var finalPassword = window.open("renderedPassword")
 
 function promptMe() {
   var userPassword = prompt(
-    "Please chose a password lenght between 8 and 128 characters long"
+    "Please choose a password length between 8 and 128 characters long"
   );
 
   if (userPassword < 8 || userPassword > 128) {
-    alert("Your password does dont meet criteria");
+    alert("Your password does not meet criteria");
     promptMe();
   } else {
     var specialChar = confirm("Do you want to include special characters");
@@ -160,25 +125,25 @@ function promptMe() {
           console.log(optionUp)
       }
       for (var i = 0; i < userPassword; i++) {
-        var randomIndex = math.floor(Math.random() * userSelection.lenght);
-        console.log(randomIndex)
-        passwordfinal = passwordfinal + userSelection[randomIndex]
-        console.log(userSelection)
-        return passwordfinal;
-      };
+        userSelection.push(optionChar, optionNum, optionLow, optionUp);
+      }
+
+      var passwordFinal = "";
+      for (var i = 0; i < userPassword; i++) {
+        var randomIndex = Math.floor(Math.random() * userSelection.length);
+        passwordFinal = passwordFinal + userSelection[randomIndex];
+      }
+      var passwordText = document.getElementById("password");
+      passwordText.textContent = passwordFinal;
+      console.log(passwordFinal);
     } else {
-      alert("Your password does dont meet criteria");
+      alert("Your password does not meet the criteria");
     }
   }
+
  
 
-  function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector('#password');
   
-    passwordText.value = password;
-  }
-
 
 
 

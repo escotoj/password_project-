@@ -1,25 +1,36 @@
-# Module 3 Challenge 
-## What was done
-created a html, css, and js file for the module 3 challenge. 
-cloned the repo, and have made a few updates. 
-Created the structure to the page, added button and input text box. 
-must include a promp when we click the button
-select the critera for the password by adding the different prompts
-used if statements and else statements
-used for-loop to cross check each criteria. 
+# Password Generator 
 
-## Things Learned
-The use of the for-loop and if statements
-further undertstanding of the git hub repo process
-more practice with html and CSS elements
+## Description
 
-## Struggles
-Using logic to find to set up the if and for-loop statements.
-Making variables that made sense and didnt confuse me
-
-### Links and Screenshots
-Github: https://github.com/escotoj/password_project-
-Deployed App: https://escotoj.github.io/password_project-/
+This app runs on the browser, and features dynamically updated HTML and CSS powered by Vanilla JavaScript.
+- Made use of the prompt() function to display password options.
+- Made used `if, else` statements and `for-loop` to cross check each criteria. 
+- Made use of the inspect tools in the Chrome DevTools for testing and debugging. 
 
 ![This is an image](Screenshot3.png)
+
+## Table of Contents
+
+- [License](#License)
+- [Future](#Future)
+- [Credits](#Credits)
+- [Contact](#Contact)
+
+## License
+
+License: MIT License
+
+## Credits
+
+Jose Escoto, Full Stack Development Student, University of Berkeley.
+
+## Contact
+
+For more questions please contact below:
+Email: j.escoto@gmail.com
+GitHub: [escotoj](https://github.com/escotoj)
+
+
+
+
 
