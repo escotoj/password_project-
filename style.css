@@ -18,9 +18,19 @@
     border-radius: 20px;
 
     flex: 0 0 300px;
-    margin: 10px;
-    font-weight: 500;
+    margin: 15%;
+    
     background-color: blanchedalmond;
+  }
+
+  .description {
+    text-align: center;
+    margin: 10%;
+
+  }
+
+  p {
+    font-size: x-large;
   }
 
  input[type=password] {
