@@ -7,7 +7,7 @@ This app runs on the browser, and features dynamically updated HTML and CSS powe
 - Made used `if, else` statements and `for-loop` to cross check each criteria. 
 - Made use of the inspect tools in the Chrome DevTools for testing and debugging. 
 
-![This is an image](Screenshot3.png)
+![This is an image](PasswordGen.png)
 
 ## Table of Contents
 

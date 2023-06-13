@@ -1,12 +1,12 @@
 * {
   box-sizing: border-box;
-  margin: 0;
+  margin: 10px;
   padding: 0;
 }
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #c7ebdc;
+  background-color: #e2eddf;
 }
 
 h1 {
@@ -68,11 +68,12 @@ h1 {
     font-weight: bold;
     border: none;
     border-radius: 20px;
+    cursor: pointer;
 
   }
 
   button:hover {
-    background-color: #930101;
+    background-color: #050e48;
   }
 
   h1 {
