@@ -64,7 +64,7 @@ var optionNum = "";
 var optionUp = "";
 var optionLow = "";
 
-var userSelection = [];
+var userSelection = []; // -----
 
 function randomSpecialChar() {
   var char = listChar[Math.floor(Math.random() * listChar.length)];
@@ -99,47 +99,34 @@ function promptMe() {
     var lowercaseChar = confirm("Do you wish to add a lower case letter");
     var uppercaseChar = confirm("Do you wish to add a upper case letter");
     var numberChar = confirm("Do you wish to add a number");
-    if (specialChar || lowercaseChar || uppercaseChar || numberChar) {
-      if (specialChar) {
-        // add fuction for random selection do the same for other
-        optionChar = randomSpecialChar();
-        // optionChar.concat(listChar)
-        console.log(optionChar);
-      }
-      if (numberChar) {
-          // optionChar = optionChar.concat(numChar)
-          optionNum = randomNumChar()
-          // optionChar.concat(listChar)
-          console.log(optionNum)
-      }
-      if (lowercaseChar) {
-        // optionChar = optionChar.concat(UpperChar)
-        optionLow = randomLowerChar();
-        // optionChar.concat(listChar)
-        console.log(optionLow);
-      }
-      if (uppercaseChar) {
-          // optionChar = optionChar.concat(UpperChar)
-          optionUp = randomUpperChar()
-          // optionChar.concat(listChar)
-          console.log(optionUp)
-      }
-      for (var i = 0; i < userPassword; i++) {
-        userSelection.push(optionChar, optionNum, optionLow, optionUp);
-      }
 
-      var passwordFinal = "";
-      for (var i = 0; i < userPassword; i++) {
-        var randomIndex = Math.floor(Math.random() * userSelection.length);
-        passwordFinal = passwordFinal + userSelection[randomIndex];
+    var passwordFinal = "";
+    while (passwordFinal.length < userPassword) {
+      if (specialChar && passwordFinal.length < userPassword) {
+        optionChar = randomSpecialChar();
+        listChar.splice(listChar.indexOf(optionChar), 1);
+        passwordFinal += optionChar;
       }
-      var passwordText = document.getElementById("password");
-      passwordText.textContent = passwordFinal;
-      console.log(passwordFinal);
+      if (numberChar && passwordFinal.length < userPassword) {
+        optionNum = randomNumChar();
+        numChar.splice(numChar.indexOf(optionNum), 1);
+        passwordFinal += optionNum;
+      }
+      if (lowercaseChar && passwordFinal.length < userPassword) {
+        optionLow = randomLowerChar();
+        lowerChar.splice(lowerChar.indexOf(optionLow), 1);
+        passwordFinal += optionLow;
+      }
+      if (uppercaseChar && passwordFinal.length < userPassword) {
+        optionUp = randomUpperChar();
+        upperChar.splice(upperChar.indexOf(optionUp), 1);
+        passwordFinal += optionUp;
+        var passwordText = document.getElementById("password");
+        passwordText.textContent = passwordFinal;
     } else {
       alert("Your password does not meet the criteria");
     }
-  }
+  }}
 };
 
   
