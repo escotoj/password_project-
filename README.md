@@ -7,7 +7,8 @@ This app runs on the browser, and features dynamically updated HTML and CSS powe
 - Made used `if, else` statements and `for-loop` to cross check each criteria. 
 - Made use of the inspect tools in the Chrome DevTools for testing and debugging. 
 
-![This is an image](PasswordGen.png)
+Deployed App on Github: [Password Generator](https://escotoj.github.io/password_project-/)
+
 
 ## Table of Contents
 
@@ -29,6 +30,8 @@ Jose Escoto, Full Stack Development Student, University of Berkeley.
 For more questions please contact below:
 Email: j.escoto@gmail.com
 GitHub: [escotoj](https://github.com/escotoj)
+
+![This is an image](passwordGen2.png)
 
 
 
